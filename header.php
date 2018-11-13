@@ -32,7 +32,7 @@
 
 				while($menu_item = $result->fetch_assoc()){
 				
-					echo '<li><a href="?id='.$menu_item['id'].'">'.$menu_item['titlu_pagina'].'</a></li>';
+					echo '<li><a href="index.php?id='.$menu_item['id'].'">'.$menu_item['titlu_pagina'].'</a></li>';
 				}
 			}
 		  ?>
