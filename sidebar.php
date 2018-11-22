@@ -1,6 +1,13 @@
     <div id="site_content">
       <div class="sidebar">
         <!-- insert your sidebar items here -->
+		<?php
+		while($row = $result_vizite->fetch_assoc()){
+		
+			$nr_vizite = $row['vizite'];
+		}
+		?>
+		<h3>Website visitors: <?php echo $nr_vizite ?></h3>
         <h3>Latest News</h3>
 		<?php
 
