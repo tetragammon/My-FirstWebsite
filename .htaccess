@@ -1,0 +1,6 @@
+RewriteEngine on
+ErrorDocument 404 http://localhost/My%20FirstWebsite/404.php
+
+#RewriteCond %{HTTP_REFFERER} swissacademy\.eu 
+
+RewriteRule ^([0-9]+)$ /index.php?id=$1
