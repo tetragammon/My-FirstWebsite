@@ -1,3 +1,25 @@
+<?php
+
+$update_vizite = "update statistici set vizite = vizite +1 where id=1";
+
+if(isset($_SESSION['aVizitatDeja'])){
+
+	
+}else{
+
+	$conn->query($update_vizite);
+	$_SESSION['aVizitatDeja'] = "yes";
+
+}
+
+$show_vizite = "select * from statistici where id=1";
+
+$result_vizite = $conn->query($show_vizite);
+
+?>
+
+
+
 <!DOCTYPE HTML>
 <html>
 
